@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="swagger2-demo" />
+        <module name="eureka-client" />
+        <module name="eureka-server" />
+        <module name="config-server" />
+        <module name="feign-demo" />
+        <module name="zuul-gateway" />
+        <module name="eureka-server-ha" />
+        <module name="admin-server" />
+        <module name="config-client" />
+        <module name="rest-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-server" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="eureka-server-ha" target="1.8" />
+      <module name="feign-demo" target="1.8" />
+      <module name="rest-demo" target="1.8" />
+      <module name="swagger2-demo" target="1.8" />
+      <module name="zuul-gateway" target="1.8" />
+      <module name="zuulDemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-server" options="-verbose" />
+      <module name="config-client" options="-verbose" />
+      <module name="config-server" options="-verbose" />
+      <module name="eureka-client" options="-verbose" />
+      <module name="eureka-server" options="-verbose" />
+      <module name="eureka-server-ha" options="-verbose" />
+      <module name="feign-demo" options="-verbose" />
+      <module name="rest-demo" options="-verbose" />
+      <module name="swagger2-demo" options="-verbose" />
+      <module name="zuul-gateway" options="-verbose" />
+    </option>
+  </component>
+</project>
