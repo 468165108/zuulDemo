@@ -1,5 +1,6 @@
 package com.example.admin.server.aop;
 
+import com.example.admin.anno.extension.ExtensionConfig;
 import com.example.admin.aop.demo.Config1;
 import com.example.admin.aop.demo.Config2;
 import com.example.admin.aop.demo.MainConfigAop;
@@ -14,7 +15,6 @@ public class AopTest {
 
     @Test
     public  void test01(){
-
         AnnotationConfigApplicationContext  ctx=new AnnotationConfigApplicationContext(MainConfigAop.class, Config1.class, Config2.class);
         MathCalculator mathCalculator = ctx.getBean(MathCalculator.class);
         int result = mathCalculator.div(10, 2);
@@ -23,7 +23,13 @@ public class AopTest {
         for(String beanName:beanDefinitionNames){
             log.info("+++++++++++++++beanName:{}",beanName);
         }
-
     }
+
+    @Test
+    public  void testExt(){
+        AnnotationConfigApplicationContext  ctx=new AnnotationConfigApplicationContext(ExtensionConfig.class);
+        ctx.close();
+    }
+
 
 }

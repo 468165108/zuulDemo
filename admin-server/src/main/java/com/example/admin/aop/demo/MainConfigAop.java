@@ -6,12 +6,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
 
-/*@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy
 @Configuration
-@Import({MathCalculator.class,LogAspects.class})*/
+@Import({MathCalculator.class,LogAspects.class})
 public class MainConfigAop {
 
-  /*  @Bean
+  @Bean
     public MathCalculator mathCalculator(){
         return new MathCalculator();
     }
@@ -20,5 +20,5 @@ public class MainConfigAop {
     public LogAspects logAspects(){
         return new LogAspects();
     }
-*/
+
 }
